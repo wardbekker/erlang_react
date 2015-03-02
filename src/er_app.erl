@@ -17,6 +17,7 @@ start(_StartType, _StartArgs) ->
     ok = application:start(ranch),
     ok = application:start(cowlib),
     ok = application:start(cowboy),
+    application:set_env(n2o, route, routes),
     er_sup:start_link().
 
 stop(_State) ->
