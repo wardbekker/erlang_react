@@ -1,0 +1,3 @@
+(projmake
+ :name  "React"
+ :shell "./rebar compile skip_deps=true")
